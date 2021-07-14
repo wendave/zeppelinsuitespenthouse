@@ -5,14 +5,12 @@
 // -----------------------------------------------------------------------------
 
 // Fonts
-$font-helveticaneue: 'HelveticaNeue';
-$font-helveticaneue-bold: 'HelveticaNeue-Bold';
-$font-helveticaneue-light: 'HelveticaNeue-Light';
-$font-helvetica-black: 'HelveticaNeue-Black';
-$font-helvetica-black-hollow: 'HelveticaNeue-Black-Hollow';
+$font-open-sans-regular: 'OpenSans Regular';
+$font-open-sans-bold: 'OpenSans Bold';
+$font-open-sans-light: 'OpenSans Light';
 
 /// @type List
-$text-font-stack: $font-helveticaneue, 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$text-font-stack: $font-open-sans-regular, 'OpenSans Regular', 'Arial', sans-serif !default;
 
 /// Code (monospace) font family
 /// @type List
@@ -24,7 +22,7 @@ $text-color: #222 !default;
 
 /// Main brand color
 /// @type Color
-$brand-color: #4868db !default;
+$brand-color: #4671cd !default;
 
 /// Light grey
 /// @type Color
@@ -46,3 +44,5 @@ $base-url: '../assets/' !default;
 
 $white: #fff;
 $black: #000;
+$black-cod: #101010;
+$blue-mariner: #2f61cd;

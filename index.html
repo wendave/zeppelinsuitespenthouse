@@ -9,46 +9,53 @@
   <meta name="author" content="Anonymous" />
   <meta name="format-detection" content="telephone=no" />
   <meta property="og:image" content="assets/images/logo.png">
-  <title>Simplicity</title>
+  <title>Zeppelin Suites Penthouse</title>
   <link rel="icon" href="assets/images/favicon.ico" />
   <link rel="stylesheet" type="text/css" href="styles/main.min.css" />
 </head>
 
 <body>
-  <header class="header-main">
-    <nav class="navbar navbar-expand-md">
-      <div class="container">
+  <header id="header_main" class="header-main">
+    <nav class="navbar navbar-expand-xl">
+      <div class="container-fluid">
         <a href="#" class="logo-link">
           <img src="./assets/images/logo-zeppelin.png" class="logo-image lazyload" alt="Logo" />
           <!-- <span class="logo-text">Simplicity</span> -->
         </a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button id="navbar_toggler" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar_menu"
+          aria-controls="navbar_menu" aria-expanded="false" aria-label="Toggle navigation">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
+        <div class="collapse navbar-collapse" id="navbar_menu">
+          <ul class="navbar-nav">
             <li class="nav-item active">
+              <span class="nav-link-bg"></span>
               <a href="#" class="nav-link">Penthouse Gallery</a>
             </li>
             <li class="nav-item">
+              <span class="nav-link-bg"></span>
               <a href="#" class="nav-link">Penthouse Floor Plan</a>
             </li>
             <li class="nav-item">
+              <span class="nav-link-bg"></span>
               <a href="#" class="nav-link">Price & Terms</a>
             </li>
             <li class="nav-item">
+              <span class="nav-link-bg"></span>
               <a href="#" class="nav-link">Location</a>
             </li>
             <li class="nav-item">
+              <span class="nav-link-bg"></span>
               <a href="#" class="nav-link">Angeles City</a>
             </li>
             <li class="nav-item">
+              <span class="nav-link-bg"></span>
               <a href="#" class="nav-link">Zeppelin Suites</a>
             </li>
-            <li class="nav-item menu-dropdown">
+            <!-- <li class="nav-item menu-dropdown">
+              <span class="nav-link-bg"></span>
               <a href="#" class="nav-link">Page 3</a>
               <ul class="list-unstyled">
                 <li class="nav-item">
@@ -61,8 +68,9 @@
                   <a href="#">Page 3 - 3</a>
                 </li>
               </ul>
-            </li>
+            </li> -->
             <li class="nav-item button">
+              <span class="nav-link-bg"></span>
               <a href="#" class="nav-link">Contact Details</a>
             </li>
           </ul>
@@ -71,197 +79,99 @@
     </nav>
   </header>
   <main class="page-home">
-    <!-- <section class="hero">
-      <div class="content">
-        <h1>Simplicity</h1>
-        <h4>Coding made simpler</h4>
-        <a href="#" class="btn btn-white-outline">Learn More</a>
-      </div>
-    </section> -->
     <section class="hero-slider">
       <div class="swiper-container hero-swiper">
         <div class="swiper-wrapper">
           <!-- <div class="swiper-slide">Slide 1</div> -->
           <div class="swiper-slide">
             <div class="video">
-              <video src="https://vuuzlemediaentertainment.s3-us-west-1.amazonaws.com/PRODUCTIONS/COVER/vme_2.mp4" class="banner-video" autoplay="" muted="" loop=""></video>
+              <video src="https://vuuzlemediaentertainment.s3-us-west-1.amazonaws.com/PRODUCTIONS/COVER/vme_2.mp4" class="slide-video" autoplay="" muted="" loop=""></video>
             </div>
           </div>
-          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">
+            <div class="overlay"></div>
+            <div class="image">
+              <img src="assets/images/home-banner1.jpg" class="slide-image" alt="" />
+            </div>
+          </div>
           <div class="swiper-slide">Slide 3</div>
           <div class="swiper-slide">Slide 4</div>
           <div class="swiper-slide">Slide 5</div>
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
+        <!-- <div class="swiper-pagination"></div> -->
+      </div>
+      <div class="hero-content">
+        <img src="assets/images/logo-zeppelin.png" class="hero-logo" alt="" />
+        <h3 class="hero-title">"Largest in Angeles City over 500sqm"</h3>
+        <a href="#" class="hero-link">CLICK HERE FOR MORE DETAILS</a>
       </div>
     </section>
-    <!-- <section class="blog">
-      <div class="bg-image lazyload" style="background-image: url(./assets/images/bg-blog.jpg);"></div>
-      <div class="overlay"></div>
-      <div class="container">
-        <h2>Lorem Ipsum</h2>
-        <div class="article-items">
-          <article class="article-item">
-            <a href="#" class="article-link">
-              <div class="article-thumbnail lazyload" style="background-image: url(./assets/images/image-blog1.jpg);"></div>
-              <div class="overlay"></div>
-              <div class="article-content">
-                <h3 class="article-title">Lorem ipsum dolor sit amet</h3>
-                <p class="article-date">June 6, 2020</p>
-              </div>
-              <div class="article-button">
-                <span class="btn btn-white-outline">Read More</span>
-              </div>
-            </a>
-          </article>          
-          <article class="article-item">
-            <a href="#" class="article-link">
-              <div class="article-thumbnail lazyload" style="background-image: url(./assets/images/image-blog2.jpg);"></div>
-              <div class="overlay"></div>
-              <div class="article-content">
-                <h3 class="article-title">Consectetur adipiscing elit</h3>
-                <p class="article-date">May 5, 2020</p>
-              </div>
-              <div class="article-button">
-                <span class="btn btn-white-outline">Read More</span>
-              </div>
-            </a>
-          </article>          
-          <article class="article-item">
-            <a href="#" class="article-link">
-              <div class="article-thumbnail lazyload" style="background-image: url(./assets/images/image-blog3.jpg);"></div>
-              <div class="overlay"></div>
-              <div class="article-content">
-                <h3 class="article-title">Sed do eiusmod tempor incididunt</h3>
-                <p class="article-date">April 4, 2020</p>
-              </div>
-              <div class="article-button">
-                <span class="btn btn-white-outline">Read More</span>
-              </div>
-            </a>
-          </article>          
-          <article class="article-item">
-            <a href="#" class="article-link">
-              <div class="article-thumbnail lazyload" style="background-image: url(./assets/images/image-blog4.jpg);"></div>
-              <div class="overlay"></div>
-              <div class="article-content">
-                <h3 class="article-title">Ut labore et dolore magna aliqua</h3>
-                <p class="article-date">March 3, 2020</p>
-              </div>
-              <div class="article-button">
-                <span class="btn btn-white-outline">Read More</span>
-              </div>
-            </a>
-          </article>          
-          <article class="article-item">
-            <a href="#" class="article-link">
-              <div class="article-thumbnail lazyload" style="background-image: url(./assets/images/image-blog5.jpg);"></div>
-              <div class="overlay"></div>
-              <div class="article-content">
-                <h3 class="article-title">Ut enim ad minim veniam, quis nostrud exercitation</h3>
-                <p class="article-date">February 2, 2020</p>
-              </div>
-              <div class="article-button">
-                <span class="btn btn-white-outline">Read More</span>
-              </div>
-            </a>
-          </article>          
-          <article class="article-item">
-            <a href="#" class="article-link">
-              <div class="article-thumbnail lazyload" style="background-image: url(./assets/images/image-blog6.jpg);"></div>
-              <div class="overlay"></div>
-              <div class="article-content">
-                <h3 class="article-title">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</h3>
-                <p class="article-date">January 1, 2020</p>
-              </div>
-              <div class="article-button">
-                <span class="btn btn-white-outline">Read More</span>
-              </div>
-            </a>
-          </article>
-        </div>
-        <div class="view-all">
-          <a href="#" class="btn btn-white">View All</a>
-        </div>
-      </div>
-    </section>
-    <section class="cta">
-      <div class="bg-video">
-        <video autoplay loop="" muted="">
-          <source src="./assets/videos/bg-video.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="overlay"></div>
-      <div class="container">
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
-        <h2>Lorem <b>Ipsum</b>, Dolor <b>Sit Amet</b>, Adipiscing <b>Consectetur</b></h2>
-        <a href="#" class="btn btn-white-outline">Get Started</a>
-      </div>
-    </section> -->
   </main>
-  <!-- <footer class="footer-main">
-    <div class="bg-text">
-      <span>simplicity</span>
-      <span>template</span>
-    </div>
-    <div class="container">
-      <div class="image-holder">
-        <img src="./assets/images/logo.png" class="footer-logo lazyload" alt="logo" />
+  <footer>
+    <div class="footer-main">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="title-area">
+              <img src="assets/images/logo-zeppelin.png" class="column-image" alt="" />
+            </div>
+            <div class="content-area">
+              <p>Zeppelin Suites afforrds exceptional views in all directions. But that's not the only way to rise above the crowd. Convenience and sheer indulgence. It's truly an experience beyond all expectations.</p>
+              <p>Live here, in the heart of Angeles City, and find all your necessities on hand, all your desires catered for. Shopping, dining, pools, spas and private gardens are at your feet.</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="title-area">
+              <h4 class="column-title">Pages</h4>
+            </div>
+            <ul class="list-unstyled column-links">
+              <li><a href="#">Angeles City & Clark Freeport</a></li>
+              <li><a href="#">Zeppelin Suite</a></li>
+              <li><a href="#">Location Map</a></li>
+              <li><a href="#">Penthouse Pictures</a></li>
+              <li><a href="#">Floorplans of Pentouse</a></li>
+              <li><a href="#">Price & Terms</a></li>
+              <li><a href="#">Contact Details</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <div class="title-area">
+              <h4 class="column-title">Penthouse Details</h4>
+            </div>
+            <ul class="list-unstyled column-links">
+              <li><a href="#">Family Area</a></li>
+              <li><a href="#">Bedroom 1</a></li>
+              <li><a href="#">Bedroom 2</a></li>
+              <li><a href="#">Bedroom 3</a></li>
+              <li><a href="#">Bathroom 1</a></li>
+              <li><a href="#">Bathroom 2</a></li>
+              <li><a href="#">Balcony</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <div class="title-area">
+              <h4 class="column-title">Contact Details</h4>
+            </div>
+            <ul class="list-unstyled column-links">
+              <li><a href="#">+63 908 876 0207 (SMART)</a></li>
+              <li><a href="#">+63 998 996 0000 (SMART)</a></li>
+              <li><a href="#">+63 917 100 2000 (GLOBE)</a></li>
+              <li><a href="#">steve@zeppelinsuitespenthouse.com</a></li>
+              <li><a href="#">pete@zeppelinsuitespenthouse.com</a></li>
+            </ul>
+            <ul class="list-unstyled social-media">
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <ul class="list-unstyled page-links">
-        <li>
-          <a href="#">Page 1</a>
-        </li>
-        <li>
-          <a href="#">Page 2</a>
-        </li>
-        <li>
-          <a href="#">Page 3</a>
-        </li>
-        <li>
-          <a href="#">Page 4</a>
-        </li>
-      </ul>
-      <div class="copyright">
-        <p>&copy; Simplicity 2021.</p>
-        <ul class="list-unstyled copyright-links">
-          <li>
-            <a href="#">Privacy Policy</a>
-          </li>
-          <li>
-            <a href="#">Terms &amp; Conditions</a>
-          </li>
-        </ul>
-        <ul class="list-unstyled social-links">
-          <li>
-            <a href="#">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
     </div>
-  </footer> -->
-  <footer class="footer-main">
-    <div class="container">
-      
+    <div class="footer-copyright">
+      <p>2021 &copy; ZeppelinSuitesPenthouse. All Rights Reserved.</p>
     </div>
   </footer>
 
