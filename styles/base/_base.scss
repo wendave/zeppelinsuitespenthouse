@@ -162,3 +162,62 @@ input[type="text"] {
 .overflow-hidden {
   overflow: hidden;
 }
+
+// main
+main {
+  padding-top: 130px;
+
+  @media (max-width: 1499px) {
+    padding-top: 120px;
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 100px;
+  }
+}
+
+// 
+.breadcrumbs {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+
+  a {
+    font-size: 16px;
+    text-decoration: none;
+  }
+
+  .category {
+    position: relative;
+    margin-right: 20px;
+
+    &::after {
+      content: '>';
+      position: relative;
+      top: 0;
+      right: -10px;
+      bottom: 0;
+      left: initial;
+      color: $brand-color;
+      pointer-events: none;
+    }
+
+    &:hover {
+      &::after {
+        color: $brand-color;
+      }
+    }
+  }
+
+  .post {
+    pointer-events: none;
+  }
+
+  @media (max-width: 767px) {
+    margin-top: 0;
+    
+    a {
+      font-size: 14px;
+    }
+  }
+}

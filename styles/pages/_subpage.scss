@@ -1,0 +1,171 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the subpage.
+// -----------------------------------------------------------------------------
+
+.subpage {
+  .intro {
+    text-align: center;
+  }
+
+  .grid {
+    padding-bottom: 70px;
+
+    .items {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      margin-right: -15px;
+      margin-left: -15px;
+    }
+
+    .item {
+      width: 100%;
+      max-width: 33.33%;
+      margin-top: 10px;
+      padding: 15px;
+    }
+
+    .item-link {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+
+      &:hover {
+        .thumbnail {
+          box-shadow: 0 2px 30px 3px rgba(0,0,0,.25);
+        }
+
+        .thumbnail-image {
+          transform: scale(1.05);
+        }
+
+        .overlay {
+          opacity: .6;
+        }
+
+        .overlay-text {
+          opacity: 1;
+        }
+      }
+    }
+
+    .thumbnail {
+      overflow: hidden;
+      transition: .5s ease-in-out all;
+    }
+
+    .thumbnail-image {
+      object-fit: cover;
+      height: 350px;
+      width: 100%;
+      transition: .5s ease-in-out all;
+    }
+
+    .overlay {
+      background-color: $blue-picton;
+      opacity: 0;
+      transition: .5s ease-in-out all;
+    }
+
+    .overlay-text {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      color: $white;
+      opacity: 0;
+      transition: .5s ease-in-out all;
+
+      .item-title-overlay {
+        font-family: $font-open-sans-bold;
+        font-size: 28px;
+      }
+
+      .item-text-overlay {
+        position: relative;
+        margin-top: 5px;
+        font-size: 16px;
+
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: 1px;
+          left: 0;
+          width: 100%;
+          height: 1px;
+          background-color: $white;
+        }
+      }
+    }
+
+    .item-title {
+      display: flex;
+      justify-content: center;
+      margin: 10px 0;
+      font-family: $font-open-sans-bold;
+      font-size: 20px;
+      color: $black-cod;
+    }
+  }
+
+  @media (max-width: 1199px) {
+    .grid .thumbnail-image {
+      height: 290px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .grid {
+      .item {
+        max-width: 50%;
+      }
+
+      .thumbnail-image {
+        height: 330px;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    .grid {
+      padding-bottom: 50px;
+      
+      .overlay-text {
+        .item-title-overlay {
+          font-size: 22px;
+        }
+  
+        .item-text-overlay {
+          font-size: 14px;
+        }
+      }
+
+      .thumbnail-image {
+        height: 240px;
+      }
+
+      .item-title {
+        font-size: 18px;
+      }
+    }
+  }
+
+  @media (max-width: 575px) {
+    .grid {
+      .item {
+        width: 300px;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}

@@ -7,3 +7,15 @@ body {
   color: $text-color;
   font: normal 125% / 1.4 $text-font-stack;
 }
+
+.page-title {
+  display: flex;
+  justify-content: center;
+  font-family: $font-open-sans-bold;
+  font-size: 36px;
+  color: $black-cod;
+
+  @media (max-width: 767px) {
+    font-size: 30px;
+  }
+}

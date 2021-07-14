@@ -15,6 +15,7 @@
   padding: 22px 0;
   opacity: 1;
   transition: .35s ease-in-out all;
+  background-color: $black;
 
   .logo-link {
     display: flex;
@@ -142,10 +143,6 @@
 
   @media (max-width: 1199px) {
     padding: 15px 0;
-
-    &.header-main-dark {
-      background-color: rgba(0,0,0,.8);
-    }
 
     .container-fluid {
       position: relative;

@@ -28,28 +28,46 @@ var headerScrolled = () => {
   navbarToggler();
 }
 
-var swipers = new Swiper(".hero-swiper", {
-  slidesPerView: 1,
-  loop: true,
-  effect: 'fade',
-  fadeEffect: {
-    crossFade: true
-  },
-  speed: 1000,
-  // autoplay: {
-  //   delay: 5000,
-  //   disableOnInteraction: false,
-  // },
-  // pagination: {
-  //   el: ".hero-swiper .swiper-pagination",
-  //   clickable: true,
-  // },
-  navigation: {
-    nextEl: ".hero-swiper .swiper-button-next",
-    prevEl: ".hero-swiper .swiper-button-prev",
-  },
-});
+var swipers = () => {
+  var swiperHero = new Swiper(".hero-swiper", {
+    slidesPerView: 1,
+    loop: true,
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true
+    },
+    speed: 1000,
+    // autoplay: {
+    //   delay: 5000,
+    //   disableOnInteraction: false,
+    // },
+    // pagination: {
+    //   el: ".hero-swiper .swiper-pagination",
+    //   clickable: true,
+    // },
+    navigation: {
+      nextEl: ".hero-swiper .swiper-button-next",
+      prevEl: ".hero-swiper .swiper-button-prev",
+    },
+  });
+
+  var swiperFeatured = new Swiper(".featured-swiper", {
+    slidesPerView: 3,
+    slidesPerGroup: 3,
+    // loop: true,
+    // loopFillGroupWithBlank: true,
+    // pagination: {
+    //   el: ".featured-swiper .swiper-pagination",
+    //   clickable: true,
+    // },
+    navigation: {
+      nextEl: ".featured-swiper .swiper-button-next",
+      prevEl: ".featured-swiper .swiper-button-prev",
+    },
+  });
+}
 
 
 // initialize the functions
 headerScrolled();
+swipers();

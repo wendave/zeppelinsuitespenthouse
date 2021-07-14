@@ -1,0 +1,34 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the single post page.
+// -----------------------------------------------------------------------------
+
+.post {
+  .featured {
+    margin-top: 40px;
+    
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+      background-color: red;
+    }
+  }
+
+  .grid {
+    .item {
+      margin-top: 0;
+    }
+
+    .overlay-text {
+      opacity: 1;
+    }
+
+    .item-title,
+    .item-text-overlay {
+      display: none;
+    }
+  }
+}
