@@ -252,8 +252,18 @@
   }
 
   @media (max-width: 991px) {
+    // .navbar-collapse {
+    //   min-height: 570px;
+    // }
+
     .navbar-collapse {
-      min-height: 570px;
+      align-items: flex-start;
+      overflow: auto;
+      min-height: initial;
+      
+      .navbar-nav {
+        padding: 15px 0;
+      }
     }
   }
 
@@ -278,6 +288,7 @@
     .navbar-collapse {
       margin-top: 10px;
       height: calc(100vh - 60px);
+      min-height: 400px;
     }
 
     .navbar-toggler {
@@ -285,10 +296,32 @@
     }
   }
 
+  // @media (min-width: 441px) and (max-width: 767px) {
+  //   .navbar-collapse {
+  //     align-items: flex-start;
+  //     overflow: auto;
+  //     min-height: initial;
+      
+  //     .navbar-nav {
+  //       padding: 15px 0;
+  //     }
+  //   }
+  // }
+
   @media (max-width: 575px) {
+    .navbar-collapse {
+      min-height: initial;
+    }
+  }
+
+  @media (max-width: 440px) {
     .logo-image {
       max-width: 170px;
       max-height: 18px;
+    }
+
+    .navbar-collapse {
+      align-items: center;
     }
   }
 }

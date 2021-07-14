@@ -15,9 +15,11 @@ var headerScrolled = () => {
 
   var navbarToggler = () => {
     document.getElementById("navbar_toggler").addEventListener("click", function () {
+      var body = document.body;
       var headerMain = document.getElementById("header_main");
       var navbarMenu = document.getElementById("navbar_menu");
       
+      body.classList.toggle("overflow-hidden");
       headerMain.classList.toggle("header-main-dark");
       navbarMenu.classList.toggle("navbar-menu-show");
     });
