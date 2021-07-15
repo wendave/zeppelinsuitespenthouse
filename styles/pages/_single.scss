@@ -10,6 +10,9 @@
   }
 
   .grid {
+    padding-top: 60px;
+    padding-bottom: 100px;
+
     .item {
       margin-top: 0;
     }
@@ -21,6 +24,13 @@
     .item-title,
     .item-text-overlay {
       display: none;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .grid {
+      padding-top: 30px;
+      padding-bottom: 60px;
     }
   }
 }

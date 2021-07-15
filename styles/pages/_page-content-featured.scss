@@ -1,0 +1,225 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the page-content-featured.
+// -----------------------------------------------------------------------------
+
+.page-content-featured {
+  padding-top: 85px;
+
+  .intro {
+    margin-bottom: -20px;
+    padding-top: 60px;
+  }
+
+  .text-content {
+    h1 {
+      font-size: 38px;
+    }
+
+    h2 {
+      font-size: 34px;
+    }
+
+    h3 {
+      font-size: 30px;
+    }
+
+    h4 {
+      font-size: 26px;
+    }
+
+    h5 {
+      font-size: 22px;
+    }
+
+    h6 {
+      font-size: 18px;
+    }
+
+    ul, ol, li, p {
+      font-size: 16px;
+    }
+
+    .wrapper {
+      color: $black-cod;
+      text-align: center;
+    }
+
+    b, strong {
+      font-family: $font-open-sans-bold;
+    }
+
+    a {
+      color: $brand-color;
+    }
+  }
+
+  .text-content-padding {
+    padding: 60px 0;
+  }
+
+  .image-grid {
+    padding: 40px 0 70px;
+
+    img {
+      max-width: 100%;
+    }
+
+    .thumbnail-link {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+
+      &:hover {
+        .thumbnail-image {
+          transform: scale(1.05);
+          filter: grayscale(.5);
+        }
+
+        .overlay {
+          opacity: .6;
+        }
+
+        .overlay-text {
+          opacity: 1;
+        }
+      }
+    }
+
+    .thumbnail-image {
+      display: flex;
+      object-fit: cover;
+      object-position: center;
+      width: 100%;
+      height: 250px;
+      transition: .5s ease-in-out all;
+    }
+
+    .overlay {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $blue-picton;
+      opacity: 0;
+      z-index: 1;
+      transition: .5s ease-in-out all;
+    }
+
+    .overlay-text {
+      position: absolute;
+      top: 0;
+      right: initial;
+      bottom: initial;
+      left: 0;
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      color: $white;
+      opacity: 0;
+      transition: .5s ease-in-out all;
+    }
+
+    .text-content {
+      margin-top: 30px;
+    }
+  }
+
+  .featured {
+    padding-bottom: 70px;
+  }
+
+  @media (max-width: 1499px) {
+    padding-top: 75px;
+  }
+
+  @media (max-width: 1199px) {
+    padding-top: 70px;
+
+    .image-grid .thumbnail-image {
+      height: 220px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .text-content-padding {
+      padding-bottom: 40px;
+    }
+
+    .image-grid {
+      padding: 30px 0 50px;
+
+      .thumbnail-image {
+        height: 170px;
+      }
+
+      .overlay-text {
+        font-size: 16px;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 60px;
+
+    .intro {
+      margin-bottom: -30px;
+      padding-top: 50px;
+    }
+
+    .image-grid {
+      .row,
+      .col {
+        padding: 0 8px;
+      }
+
+      .thumbnail-image {
+        height: 130px;
+      }
+
+      .overlay-text {
+        font-size: 14px;
+      }
+    }
+
+    .featured {
+      padding-bottom: 50px;
+    }
+  }
+
+  @media (max-width: 575px) {
+    .image-grid {
+      .row {
+        flex-direction: column;
+        padding-bottom: 0;
+      }
+
+      .col {
+        flex: 0 0 auto;
+        padding: 0 5px;
+
+        &:not(:first-child) {
+          margin-top: 20px;
+        }
+      }
+
+      .thumbnail-link {
+        width: 100%;
+        max-width: 330px;
+        margin: auto;
+      }
+
+      .thumbnail-image {
+        height: 60vw;
+        max-height: 300px;
+      }
+    }
+  }
+}

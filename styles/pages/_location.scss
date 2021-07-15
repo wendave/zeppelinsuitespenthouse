@@ -1,0 +1,35 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the location page.
+// -----------------------------------------------------------------------------
+
+.map {
+  padding: 35px 50px 70px;
+
+  @media (max-width: 1499px) {
+    iframe {
+      height: 750px;
+    }
+  }
+
+  @media (max-width: 1199px) {
+    iframe {
+      height: 700px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    iframe {
+      height: 600px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    padding: 25px 30px 50px;
+
+    iframe {
+      height: 480px;
+    }
+  }
+}

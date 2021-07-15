@@ -207,6 +207,11 @@
           background-color: transparent;
           opacity: 1;
 
+          li {
+            display: flex;
+            justify-content: center;
+          }
+
           a {
             font-size: 20px;
             color: $white;
@@ -241,6 +246,11 @@
       opacity: 0;
       pointer-events: none;
 
+      // added
+      .navbar-nav {
+        margin-top: -70px;
+      }
+
       &.navbar-menu-show {
         opacity: 1;
         pointer-events: all;
@@ -257,9 +267,15 @@
       align-items: flex-start;
       overflow: auto;
       min-height: initial;
+
+      // added
+      height: 100vh;
       
       .navbar-nav {
         padding: 15px 0;
+        
+        // added
+        margin-top: initial;
       }
     }
   }
