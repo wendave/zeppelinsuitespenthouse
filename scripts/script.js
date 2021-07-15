@@ -53,7 +53,7 @@ var swipers = () => {
   });
 
   var swiperFeatured = new Swiper(".featured-swiper", {
-    slidesPerView: 3,
+    // slidesPerView: 4,
     slidesPerGroup: 1,
     // loop: true,
     // loopFillGroupWithBlank: true,
@@ -72,6 +72,10 @@ var swipers = () => {
       },
       768: {
         slidesPerView: 3,
+        spaceBetween: 0,
+      },
+      992: {
+        slidesPerView: 4,
         spaceBetween: 0,
       },
     },

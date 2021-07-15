@@ -53,7 +53,7 @@
     display: flex;
     object-fit: cover;
     width: 100%;
-    height: 200px;
+    height: 160px;
     cursor: pointer;
 
     &.active {
@@ -92,7 +92,7 @@
     }
 
     .thumbnail-image {
-      height: 180px;
+      height: 140px;
     }
   }
 
@@ -102,7 +102,7 @@
     }
 
     .thumbnail-image {
-      height: 120px;
+      height: 130px;
     }
   }
 
@@ -126,7 +126,7 @@
     }
 
     .swiper-slide {
-      padding: 0 5px;
+      padding: 0 7px;
     }
 
     .swiper-arrow-custom {
@@ -138,6 +138,10 @@
   @media (max-width: 575px) {
     .thumbnail-image {
       height: 26vw;
+    }
+
+    .swiper-slide {
+      padding: 0 5px;
     }
   }
 }
