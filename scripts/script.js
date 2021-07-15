@@ -28,6 +28,7 @@ var headerScrolled = () => {
   navbarToggler();
 }
 
+// swipers
 var swipers = () => {
   var swiperHero = new Swiper(".hero-swiper", {
     slidesPerView: 1,
@@ -53,7 +54,7 @@ var swipers = () => {
 
   var swiperFeatured = new Swiper(".featured-swiper", {
     slidesPerView: 3,
-    slidesPerGroup: 3,
+    slidesPerGroup: 1,
     // loop: true,
     // loopFillGroupWithBlank: true,
     // pagination: {
@@ -61,9 +62,65 @@ var swipers = () => {
     //   clickable: true,
     // },
     navigation: {
-      nextEl: ".featured-swiper .swiper-button-next",
-      prevEl: ".featured-swiper .swiper-button-prev",
+      nextEl: ".featured-swiper .swiper-button-next-custom",
+      prevEl: ".featured-swiper .swiper-button-prev-custom",
     },
+    breakpoints: {
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 0,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 0,
+      },
+    },
+  });
+}
+
+// feature section with swiper thumbnails
+var featured = () => {
+  var featuredSection = document.getElementById("featured_section");
+  window.addEventListener("load", function() {
+    if (featuredSection) {
+
+      // on load, display the first thumbnail
+      setTimeout(() => {
+        $("#featured_section .swiper-slide-active .thumbnail-image").click();
+      }, 100);
+
+      setTimeout(() => {
+        $("#featured_section").addClass("show");
+      }, 500);
+  
+      $(".featured-swiper .thumbnail-image").each(function() {
+        // $(this).click(function() {
+        //   var imageSrc = $(this).attr("src");
+  
+        //   $("#featured_wrapper").fadeOut();
+        //   setTimeout(() => {
+        //     $("#featured_image").attr("src", imageSrc);
+        //     $("#featured_wrapper").fadeIn();
+        //   }, 300);
+        // });
+  
+        $(this).click(function() {
+          var imageSrc = $(this).attr("src");
+  
+          if (!$(this).hasClass("active")) {
+            $(this).addClass("active");
+            $(".featured-swiper .thumbnail-image").removeClass("active");
+            $("#featured_wrapper").css("opacity","0");
+            
+            setTimeout(() => {
+              $("#featured_image").attr("src", imageSrc);
+              $("#featured_wrapper").css("opacity","1");
+            }, 500);
+            $(this).addClass("active");
+          }
+        });
+      });
+    }
   });
 }
 
@@ -71,3 +128,4 @@ var swipers = () => {
 // initialize the functions
 headerScrolled();
 swipers();
+featured();

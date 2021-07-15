@@ -79,7 +79,7 @@
     </nav>
   </header>
   <main class="subpage">
-    <section class="intro">
+    <section class="intro text-center">
       <div class="container">
         <h1 class="page-title">Penthouse Gallery</h1>
         <ul class="breadcrumbs">
@@ -88,21 +88,57 @@
         </ul>
       </div>
     </section>
-    <section class="featured">
+    <section id="featured_section" class="featured">
       <div class="container">
-        <div class="swiper-container featured-swiper">
+        <div id="featured_wrapper" class="featured-wrapper">
+          <img src="" id="featured_image" class="featured-image" alt="" />
+        </div>
+        <div id="featured_text" class="featured-text">
+          <p>Balconies accessible from most rooms</p>
+        </div>
+        <div id="featured_swiper" class="swiper-container featured-swiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">
+              <div class="thumbnail">
+                <img src="assets/images/home-banner1.jpg" class="thumbnail-image" alt="" />
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="thumbnail">
+                <img src="assets/images/image-blog1.jpg" class="thumbnail-image" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="thumbnail">
+                <img src="assets/images/image-blog2.jpg" class="thumbnail-image" alt="" />
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="thumbnail">
+                <img src="assets/images/image-blog3.jpg" class="thumbnail-image" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="thumbnail">
+                <img src="assets/images/image-blog4.jpg" class="thumbnail-image" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="thumbnail">
+                <img src="assets/images/image-blog5.jpg" class="thumbnail-image" alt="" />
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="thumbnail">
+                <img src="assets/images/image-blog6.jpg" class="thumbnail-image" alt="" />
+              </div>
+            </div>
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
+          <div class="swiper-arrow-custom swiper-button-next-custom"><i class="fas fa-chevron-right"></i></div>
+          <div class="swiper-arrow-custom swiper-button-prev-custom"><i class="fas fa-chevron-left"></i></div>
         </div>
       </div>
     </section>
