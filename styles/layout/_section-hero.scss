@@ -35,6 +35,14 @@
     left: 0;
   }
 
+  .swiper-slide-active {
+    .image, .video {
+      img, video {
+        animation: kenburn 40s ease infinite;
+      }
+    }
+  }
+
   .image,
   .video {
     display: flex;
@@ -48,7 +56,6 @@
       object-position: center;
       min-width: 100%;
       min-height: 100%;
-      animation: kenburn 40s ease infinite;
     }
   }
 

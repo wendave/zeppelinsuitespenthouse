@@ -47,6 +47,10 @@
 
   .column-links {
     margin-top: -5px;
+
+    & + .column-links {
+      margin-top: initial;
+    }
     
     a {
       line-height: 1.9;

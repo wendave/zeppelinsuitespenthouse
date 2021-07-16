@@ -1,3 +1,5 @@
+var $ = jQuery;
+
 // header function
 var headerScrolled = () => {
   // function checkScroll() {
@@ -14,7 +16,7 @@ var headerScrolled = () => {
   // });
 
   var navbarToggler = () => {
-    document.getElementById("navbar_toggler").addEventListener("click", function () {
+    $("#navbar_toggler").on("click", function () {
       var body = document.body;
       var headerMain = document.getElementById("header_main");
       var navbarMenu = document.getElementById("navbar_menu");
@@ -128,8 +130,9 @@ var featured = () => {
   });
 }
 
-
 // initialize the functions
-headerScrolled();
-swipers();
-featured();
+$(window).on("load", function() {
+  headerScrolled();
+  swipers();
+  featured();
+});
