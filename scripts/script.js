@@ -38,10 +38,10 @@ var swipers = () => {
       crossFade: true
     },
     speed: 1000,
-    // autoplay: {
-    //   delay: 5000,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 7000,
+      disableOnInteraction: false,
+    },
     // pagination: {
     //   el: ".hero-swiper .swiper-pagination",
     //   clickable: true,
