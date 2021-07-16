@@ -100,6 +100,39 @@
     justify-content: flex-start;
   }
 
+  .featured-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0;
+
+    &-title {
+      font-family: $font-open-sans-bold;
+      font-size: 24px;
+    }
+
+    &-list {
+      max-width: 550px;
+      margin-top: 15px;
+    }
+
+    &-item {
+      display: flex;
+      font-size: 18px;
+
+      & + .featured-description-item {
+        margin-top: 5px;
+      }
+    }
+
+    .icon {
+      margin-top: 5px;
+      margin-right: 8px;
+      font-size: 17px;
+      color: $brand-color;
+    }
+  }
+
   @media (max-width: 1199px) {
     .featured-image {
       max-height: 700px;
@@ -146,6 +179,29 @@
     .swiper-arrow-custom {
       width: 25px;
       font-size: 22px;
+    }
+
+    .featured-description {
+      margin: 25px 0;
+
+      &-title {
+        font-size: 20px;
+      }
+
+      &-list {
+        max-width: calc(100% - 50px);
+        margin-top: 10px;
+      }
+
+      &-item {
+        font-size: 16px;
+      }
+
+      .icon {
+        margin-top: 4px;
+        margin-right: 7px;
+        font-size: 15px;
+      }
     }
   }
 

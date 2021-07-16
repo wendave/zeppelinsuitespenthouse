@@ -1,0 +1,17 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the amenities.
+// -----------------------------------------------------------------------------
+
+.page-amenities {
+  .grid {
+    padding-bottom: 80px;
+  }
+
+  @media (max-width: 767px) {
+    .grid {
+      padding-bottom: 60px;
+    }
+  }
+}
