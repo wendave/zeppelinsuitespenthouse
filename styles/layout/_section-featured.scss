@@ -36,6 +36,7 @@
     font-size: 22px;
     font-family: $font-open-sans-bold;
     color: $black;
+    transition: .5s ease-in-out all;
   }
 
   .featured-swiper {
@@ -51,6 +52,8 @@
   }
 
   .thumbnail {
+    object-fit: cover;
+    width: 100%;
     overflow: hidden;
   }
 
