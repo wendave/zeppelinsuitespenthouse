@@ -76,6 +76,30 @@ var swipers = () => {
       },
     },
   });
+
+  var swiperFeaturedFoorplan = new Swiper(".featured-swiper-floorplan", {
+    slidesPerView: 4,
+    slidesPerGroup: 1,
+    allowTouchMove: false,
+    // navigation: {
+    //   nextEl: ".featured-swiper-floorplan .swiper-button-next-custom",
+    //   prevEl: ".featured-swiper-floorplan .swiper-button-prev-custom",
+    // },
+    // breakpoints: {
+    //   320: {
+    //     slidesPerView: 2,
+    //     spaceBetween: 0,
+    //   },
+    //   768: {
+    //     slidesPerView: 3,
+    //     spaceBetween: 0,
+    //   },
+    //   992: {
+    //     slidesPerView: 4,
+    //     spaceBetween: 0,
+    //   },
+    // },
+  });
 }
 
 // feature section with swiper thumbnails
@@ -92,7 +116,7 @@ var featured = () => {
       $("#featured_section").addClass("show");
     }, 500);
 
-    $(".featured-swiper .thumbnail-image").each(function() {
+    $("#featured_swiper .thumbnail-image").each(function() {
       // $(this).click(function() {
       //   var imageSrc = $(this).attr("src");
 
