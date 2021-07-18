@@ -44,10 +44,6 @@ var swipers = () => {
       delay: 7000,
       disableOnInteraction: false,
     },
-    // pagination: {
-    //   el: ".hero-swiper .swiper-pagination",
-    //   clickable: true,
-    // },
     navigation: {
       nextEl: ".hero-swiper .swiper-button-next",
       prevEl: ".hero-swiper .swiper-button-prev",
@@ -81,24 +77,6 @@ var swipers = () => {
     slidesPerView: 4,
     slidesPerGroup: 1,
     allowTouchMove: false,
-    // navigation: {
-    //   nextEl: ".featured-swiper-floorplan .swiper-button-next-custom",
-    //   prevEl: ".featured-swiper-floorplan .swiper-button-prev-custom",
-    // },
-    // breakpoints: {
-    //   320: {
-    //     slidesPerView: 2,
-    //     spaceBetween: 0,
-    //   },
-    //   768: {
-    //     slidesPerView: 3,
-    //     spaceBetween: 0,
-    //   },
-    //   992: {
-    //     slidesPerView: 4,
-    //     spaceBetween: 0,
-    //   },
-    // },
   });
 }
 
@@ -117,23 +95,13 @@ var featured = () => {
     }, 500);
 
     $("#featured_swiper .thumbnail-image").each(function() {
-      // $(this).click(function() {
-      //   var imageSrc = $(this).attr("src");
-
-      //   $("#featured_wrapper").fadeOut();
-      //   setTimeout(() => {
-      //     $("#featured_image").attr("src", imageSrc);
-      //     $("#featured_wrapper").fadeIn();
-      //   }, 300);
-      // });
-
       $(this).click(function() {
         var imageSrc = $(this).attr("src");
         var imageDescription = $(this).parent().find(".thumbnail-description").text();
 
         if (!$(this).hasClass("active")) {
           $(this).addClass("active");
-          $(".featured-swiper .thumbnail-image").removeClass("active");
+          $("#featured_swiper .thumbnail-image").removeClass("active");
           $("#featured_wrapper").css("opacity","0");
           $(".featured-text").css("opacity","0");
           
