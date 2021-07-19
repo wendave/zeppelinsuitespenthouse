@@ -99,21 +99,40 @@ var featured = () => {
         var imageSrc = $(this).attr("src");
         var imageDescription = $(this).parent().find(".thumbnail-description").text();
 
-        if (!$(this).hasClass("active")) {
-          $(this).addClass("active");
-          $("#featured_swiper .thumbnail-image").removeClass("active");
-          $("#featured_wrapper").css("opacity","0");
-          $(".featured-text").css("opacity","0");
+        $(this).addClass("active");
+        $("#featured_swiper .thumbnail-image").removeClass("active");
+        $("#featured_wrapper").css("opacity","0");
+        $(".featured-text").css("opacity","0");
+        
+        setTimeout(() => {
+          $("#featured_image").attr("src", imageSrc);
+          $("#featured_text p").text(imageDescription);
+          $("#featured_wrapper").css("opacity","1");
+          $(".featured-text").css("opacity","1");
+        }, 500);
+        $(this).addClass("active");
+
+        // if (!$(this).hasClass("active")) {
+        //   $(this).addClass("active");
+        //   $("#featured_swiper .thumbnail-image").removeClass("active");
+        //   $("#featured_wrapper").css("opacity","0");
+        //   $(".featured-text").css("opacity","0");
           
-          setTimeout(() => {
-            $("#featured_image").attr("src", imageSrc);
-            $("#featured_text p").text(imageDescription);
-            $("#featured_wrapper").css("opacity","1");
-            $(".featured-text").css("opacity","1");
-          }, 500);
-          $(this).addClass("active");
-        }
+        //   setTimeout(() => {
+        //     $("#featured_image").attr("src", imageSrc);
+        //     $("#featured_text p").text(imageDescription);
+        //     $("#featured_wrapper").css("opacity","1");
+        //     $(".featured-text").css("opacity","1");
+        //   }, 500);
+        //   $(this).addClass("active");
+        // }
       });
+    });
+
+    $("#featured_zoom").click(function() {
+      var imgSrc = $("#featured_image").attr("src");
+
+      $("#featured_modal_image").attr("src", imgSrc);
     });
   }
 }

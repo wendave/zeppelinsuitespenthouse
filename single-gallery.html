@@ -78,7 +78,7 @@
       </div>
     </nav>
   </header>
-  <main class="post">
+  <main class="single-post single-post-gallery">
     <section class="intro text-center">
       <div class="container">
         <h1 class="page-title">Penthouse Gallery</h1>
@@ -91,6 +91,9 @@
     <section id="featured_section" class="featured">
       <div class="container">
         <div id="featured_wrapper" class="featured-wrapper">
+          <div type="button" id="featured_zoom" class="featured-zoom" data-toggle="modal" data-target="#featured_modal">
+            <img src="assets/images/icon-zoom.png" class="featured-zoom-icon" alt="zoom" />
+          </div>
           <img src="" id="featured_image" class="featured-image" alt="" />
         </div>
         <div id="featured_text" class="featured-text">
@@ -303,6 +306,19 @@
       <p>2021 &copy; ZeppelinSuitesPenthouse. All Rights Reserved.</p>
     </div>
   </footer>
+
+  <div class="modal featured-modal fade" id="featured_modal" tabindex="-1" role="dialog" aria-labelledby="featured_modal" aria-hidden="true">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <img src="" id="featured_modal_image" class="featured-modal-image" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="scripts/vendors/jquery.min.js" defer onload="" id="jquery_min_js"></script>
   <script src="scripts/vendors/popper.min.js" defer onload="" id="popper_min_js"></script>
